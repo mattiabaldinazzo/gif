@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to load a random gif
     function loadRandomGif() {
-        const gifDirectory = '/Users/mattia/Desktop/workspace/websites/gif/gif-directory';
+        const gifDirectory = 'https://github.com/mattiabaldinazzo/gif/tree/main/gif-directory';
         const gifList = ['giphy1.gif', 'giphy2.gif']; // Add your gif filenames here
         const randomIndex = Math.floor(Math.random() * gifList.length);
         const randomGif = gifList[randomIndex];
