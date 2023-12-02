@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+#gifImage {
+    max-width: 100%;
+    height: auto;
+}
+
+#changeButton {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
