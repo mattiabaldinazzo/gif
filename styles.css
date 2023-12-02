@@ -1,22 +1,44 @@
-body {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-}
-
-#gifImage {
-    max-width: 100%;
-    height: auto;
-}
-
-#changeButton {
-    margin-top: 10px;
-    padding: 10px;
+* {
+    box-sizing: border-box;
+  }
+  .player-container {
+    display: table;
+    background-color: #222;
+    border: 1px solid black;
+    #playing {
+      display: none;
+    }
+    .gif {
+      visibility: hidden;
+    }
+    #playing:checked {
+      ~ .gif {
+        visibility: visible;
+      }
+      ~.btn-play {
+        display: none;
+      }
+      ~.btn-stop {
+        display: block;
+      }
+    }
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.6rem;
+    border-top: 1px solid white;
+    font-family: Arial, sans-serif;
+    color: white;
     cursor: pointer;
-}
+    &:hover {
+      background-color: #444;
+    }
+    &.btn-stop {
+      display: none;
+      .icon-stop {
+        font-size: 135%;
+        line-height: 1px;
+      }
+    }
+  }
